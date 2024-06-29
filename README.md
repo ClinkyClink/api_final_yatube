@@ -1,4 +1,4 @@
-# Api Yatube
+# API Yatube
 
 Автор: [Евгений](https://github.com/ClinkyClink)
 
