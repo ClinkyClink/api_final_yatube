@@ -51,5 +51,11 @@ class Follow(models.Model):
         related_name='following',
     )
 
+    class Meta:
+        constraints = (
+            models.UniqueConstraint(fields=('user', 'following'),
+                                    name='unique_following'),
+        )
+
     def __str__(self):
         return f'{self.user} подписан на {self.following}'
